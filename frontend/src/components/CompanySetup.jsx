@@ -8,7 +8,9 @@ import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'sonner';
 import { ArrowLeft } from 'lucide-react';
-import useGetCompanyById from '@/hooks/useGetCompanyById';
+
+import useGetCompanyById from "@/hooks/useGetCompanyById";
+
 const api=import.meta.env.VITE_API_URL;
 
 const CompanySetup = () => {

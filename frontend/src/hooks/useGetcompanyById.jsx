@@ -2,6 +2,7 @@ import { setSingleCompany } from "@/redux/companySlice";
 import axios from "axios";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
+
 const api=import.meta.env.VITE_API_URL;
 
 const useGetCompanyById = (id) => {
