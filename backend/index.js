@@ -15,23 +15,13 @@ connectDB();
 const PORT = process.env.PORT || 5000;
 const app = express();
 
-const allowedOrigins = [
-  "https://jobportal-app108-production.onrender.com"
- 
-];
+app.use(cors({
+    origin: "https://jobportal-app108-production.onrender.com",  // your React deployed URL
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true,
-};
-
-app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
