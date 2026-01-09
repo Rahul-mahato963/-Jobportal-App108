@@ -65,9 +65,7 @@ job-portal-app/
 
 ## 📸 Live Link
 
-! [Home Page]-https://jobportal-app108production.onrender.com
-![Signup Page]- https://jobportal-app108production.onrender.com/signup
-![jobs]-https://jobportal-app108production.onrender.com/jobs
+
 
 
 
